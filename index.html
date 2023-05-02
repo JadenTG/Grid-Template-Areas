@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Project</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #parentDiv{
+            display: grid;
+            grid-template-areas:'one one one one one one'
+                                'two three three three four four'
+                                'two three three three four four'
+                                'two three three three four four'
+                                'two five five five five five';
+            border: black solid 2px;
+            height: 100vh;
+        }
+
+        .one{
+            grid-area: one;
+            background-color: #4472c4;
+        }
+        .two{
+            grid-area: two;
+            background-color: #97a9d9;
+        }
+        .three{
+            grid-area: three;
+            background-color: #cbcbcb;
+        }
+        .four{
+            grid-area: four;
+            background-color: #97a9d9;
+        }
+        .five{
+            grid-area: five;
+            background-color: #4472c4;
+        }
+
+        #parentDiv div{
+            border: black solid 2px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="parentDiv">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+    </div>
+</body>
+</html>
